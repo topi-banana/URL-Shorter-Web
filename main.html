@@ -1,0 +1,27 @@
+
+<head prefix="og: https://ogp.me/ns#">
+    <meta property="og:url" content="https://s.topi.cf/{{id}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="URL Shorter - とぴ。" />
+    <meta property="og:description" content="URL Shorter" />
+    <meta property="og:site_name" content="とぴ。のさいと" />
+    <meta property="og:image" content="{{image}}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@topi_banana" />
+    <meta name="twitter:creator" content="@topi_banana" />
+</head>
+<body>
+    <script>
+        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+        window.onload = async () => {
+            for(let i = 0; i < 5; i++){
+                console.log(5-i)
+                await sleep(1000)
+            }
+            location.href = '{{originalUrl}}'
+        }
+    </script>
+    <style>
+    </style>
+</body>
